@@ -56,7 +56,7 @@ lenet5 = Lenet5()
 lenet5.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 lenet5.fit(x_train, y_train, epochs=10, batch_size=64)
 
-lenet5.evaluate(x_test, y_test)
+lenet5.evaluate(x_train, y_test)
 
 lenet5.save("./Lenet5_mnist.h5")
 
