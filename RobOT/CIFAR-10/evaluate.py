@@ -31,6 +31,7 @@ sNums = [500*i for i in [2,4,8,12,20]]
 strategies = ['best', 'kmst', 'gini']
 acc_pure = [[] for i in range(len(strategies))]
 acc_fp = [[] for i in range(len(strategies))]
+print("acc_fp:",acc_fp)
 
 
 for num in sNums:
